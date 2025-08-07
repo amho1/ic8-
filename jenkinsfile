@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sshagent(['ubuntu']) {
                     sh '''
-                    ssh -o StrictHostKeyChecking=no ubuntu@18.234.158.229 <<EOF
+                    ssh -o StrictHostKeyChecking=no ubuntu@34.207.102.230 <<EOF
 if [ ! -d "repo" ]; then
     git clone https://github.com/amho1/ic8-.git repo
 else
